@@ -4,7 +4,15 @@
   </head>
   <body>
     <a-scene>
-      <a-box src="img/texture.jpg" position="0 0 -4" rotation="0 45 0" scale="0.5 1 2"></a-box>
+      <a-box src="img/texture.jpg" position="0 2 -4" rotation="0 45 0" scale="1 1 1">
+        <a-animation
+          attribute="position"
+          to="0 2.2 -5"
+          direction="alternate"
+          dur="2000"
+          repeat="indefinite">
+        </a-animation>
+      </a-box>
       <a-sky color="#00CED1"></a-sky>
       <a-plane src="img/texture.jpg" rotation="-90 0 0" width="10" height="10" repeat="10 10"></a-plane>
     </a-scene>
